@@ -1,347 +1,246 @@
-<!-- ========================================================= -->
-<!-- PÁGINA WEB JAVERY - INGENIERÍA HUMANA Y TECNOLÓGICA -->
-<!-- CREADA PARA PRINCIPIANTES - LISTA PARA GITHUB PAGES -->
-<!-- ========================================================= -->
-
-<!DOCTYPE html> <!-- Indica que el documento es HTML5 -->
-<html lang="es"> <!-- Idioma español -->
-
-<head> <!-- Inicio de la cabecera -->
-
-    <meta charset="UTF-8"> <!-- Permite caracteres especiales -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Diseño responsive -->
-
-    <title>JAVERY - Ingeniería Humana y Tecnológica</title> <!-- Título de la página -->
-
-    <style> /* INICIO DE ESTILOS CSS */
-
-        /* ===== ESTILO GENERAL ===== */
-        body{
-            margin:0; /* Elimina márgenes */
-            padding:0; /* Elimina espacios */
-            font-family: Arial, Helvetica, sans-serif; /* Fuente */
-            background: linear-gradient(to bottom, #001f3f, #000000); /* Fondo degradado */
-            color:white; /* Color de texto */
-        }
-
-        /* ===== PORTADA ===== */
-        .portada{
-            width:100%; /* Ancho completo */
-            height:550px; /* Altura */
-            background-image: url('JAVERY V 2.4 modif(1).png'); /* Imagen portada */
-            background-size: cover; /* Ajusta imagen */
-            background-position: center; /* Centra imagen */
-            display:flex; /* Activa flexbox */
-            justify-content:center; /* Centra horizontal */
-            align-items:center; /* Centra vertical */
-            text-align:center; /* Texto centrado */
-        }
-
-        /* ===== SOMBRA OSCURA SOBRE LA PORTADA ===== */
-        .overlay{
-            background: rgba(0,0,0,0.55); /* Transparencia */
-            padding:30px; /* Espacio interno */
-            border-radius:20px; /* Bordes redondos */
-        }
-
-        /* ===== TÍTULO PRINCIPAL ===== */
-        .titulo{
-            font-size:80px; /* Tamaño grande */
-            font-weight:bold; /* Negrilla */
-            text-align:center; /* Centrado */
-            text-shadow:
-                3px 3px 0 gold,
-                -3px -3px 0 gold,
-                3px -3px 0 gold,
-                -3px 3px 0 gold,
-                0px 0px 15px gold; /* Filos dorados */
-        }
-
-        /* ===== COLOR DE CADA LETRA ===== */
-        .rojo{
-            color:#ff0000; /* Rojo */
-        }
-
-        .azul{
-            color:#00bfff; /* Azul eléctrico */
-        }
-
-        .negro{
-            color:#111111; /* Negro */
-        }
-
-        /* ===== SUBTÍTULO ===== */
-        .subtitulo{
-            font-size:40px; /* Tamaño */
-            font-weight:bold; /* Negrilla */
-            text-align:center; /* Centrado */
-            margin-top:20px; /* Separación */
-            text-shadow:
-                2px 2px 0 gold,
-                -2px -2px 0 gold,
-                2px -2px 0 gold,
-                -2px 2px 0 gold,
-                0px 0px 10px gold; /* Filos dorados */
-        }
-
-        /* ===== CONTENEDOR PRINCIPAL ===== */
-        .contenedor{
-            width:90%; /* Ancho */
-            margin:auto; /* Centrado */
-            padding:30px; /* Espaciado */
-        }
-
-        /* ===== CAJAS DE SERVICIOS ===== */
-        .servicio{
-            background:#0d1b2a; /* Fondo oscuro */
-            margin-bottom:30px; /* Separación */
-            padding:20px; /* Espacio interno */
-            border-radius:20px; /* Bordes */
-            box-shadow:0px 0px 20px cyan; /* Brillo */
-            transition:0.4s; /* Animación */
-        }
-
-        /* ===== EFECTO AL PASAR EL MOUSE ===== */
-        .servicio:hover{
-            transform:scale(1.02); /* Agranda */
-            box-shadow:0px 0px 30px gold; /* Brillo dorado */
-        }
-
-        /* ===== TITULOS DE SERVICIOS ===== */
-        .servicio h2{
-            color:#00ffff; /* Cyan */
-            font-size:35px; /* Tamaño */
-            text-shadow:0px 0px 10px yellow; /* Brillo */
-        }
-
-        /* ===== LISTAS ===== */
-        ul{
-            font-size:24px; /* Tamaño */
-            line-height:2; /* Separación */
-        }
-
-        /* ===== IMÁGENES ===== */
-        .imagen-servicio{
-            width:100%; /* Ancho completo */
-            max-width:500px; /* Máximo ancho */
-            display:block; /* Tipo bloque */
-            margin:auto; /* Centra */
-            border-radius:20px; /* Bordes */
-            box-shadow:0px 0px 20px #00ffff; /* Brillo */
-        }
-
-        /* ===== SECCIÓN DESTACADA ===== */
-        .destacado{
-            background:linear-gradient(to right,#ff0080,#7928ca); /* Fondo */
-            padding:20px; /* Espaciado */
-            border-radius:20px; /* Bordes */
-            text-align:center; /* Centrado */
-            font-size:28px; /* Tamaño */
-            font-weight:bold; /* Negrilla */
-            box-shadow:0px 0px 20px gold; /* Brillo */
-        }
-
-        /* ===== WHATSAPP ===== */
-        .whatsapp{
-            text-align:center; /* Centrado */
-            margin-top:40px; /* Separación */
-            font-size:28px; /* Tamaño */
-            font-weight:bold; /* Negrilla */
-            color:#00ff90; /* Verde */
-        }
-
-        /* ===== BOTÓN CATÁLOGO ===== */
-        .catalogo{
-            text-align:center; /* Centrado */
-            margin-top:40px; /* Separación */
-        }
-
-        .boton{
-            background:#25d366; /* Verde WhatsApp */
-            color:white; /* Texto blanco */
-            padding:20px 35px; /* Espaciado */
-            border-radius:50px; /* Bordes redondos */
-            text-decoration:none; /* Quita subrayado */
-            font-size:25px; /* Tamaño */
-            font-weight:bold; /* Negrilla */
-            box-shadow:0px 0px 20px #25d366; /* Brillo */
-            transition:0.4s; /* Animación */
-        }
-
-        /* ===== EFECTO BOTÓN ===== */
-        .boton:hover{
-            background:gold; /* Color dorado */
-            color:black; /* Texto negro */
-            transform:scale(1.05); /* Agranda */
-        }
-
-        /* ===== PIE DE PÁGINA ===== */
-        footer{
-            text-align:center; /* Centrado */
-            padding:20px; /* Espacio */
-            background:black; /* Fondo */
-            margin-top:50px; /* Separación */
-            font-size:18px; /* Tamaño */
-        }
-
-    </style> <!-- FIN CSS -->
-
-</head> <!-- Fin cabecera -->
-
-<body> <!-- Inicio cuerpo -->
-
-    <!-- ===================== PORTADA ===================== -->
-    <section class="portada">
-
-        <!-- Caja oscura -->
-        <div class="overlay">
-
-            <!-- TÍTULO -->
-            <h1 class="titulo">
-
-                <span class="rojo">JA</span>
-                <span class="azul">VE</span>
-                <span class="negro">RY</span>
 
-            </h1>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>JAVERY</title>
+
+<style>
+
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial;
+    background:linear-gradient(to bottom,#001f3f,#000000);
+    color:white;
+}
+
+.portada{
+    width:100%;
+    height:500px;
+    background-image:url('JAVERY V 2.4 modif(1).png');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.overlay{
+    background:rgba(0,0,0,0.5);
+    padding:30px;
+    border-radius:20px;
+}
+
+.titulo{
+    font-size:80px;
+    font-weight:bold;
+    text-align:center;
+    text-shadow:3px 3px 10px gold;
+}
+
+.rojo{
+    color:red;
+}
+
+.azul{
+    color:#00bfff;
+}
+
+.negro{
+    color:black;
+}
+
+.subtitulo{
+    text-align:center;
+    font-size:40px;
+    font-weight:bold;
+    text-shadow:2px 2px 10px gold;
+}
+
+.contenedor{
+    width:90%;
+    margin:auto;
+    padding:30px;
+}
+
+.servicio{
+    background:#0d1b2a;
+    padding:20px;
+    margin-bottom:30px;
+    border-radius:20px;
+    box-shadow:0px 0px 20px cyan;
+}
+
+.servicio h2{
+    color:#00ffff;
+}
+
+.imagen-servicio{
+    width:100%;
+    max-width:500px;
+    border-radius:20px;
+    display:block;
+    margin:auto;
+}
+
+ul{
+    font-size:24px;
+    line-height:2;
+}
+
+.destacado{
+    background:linear-gradient(to right,#ff0080,#7928ca);
+    padding:20px;
+    border-radius:20px;
+    text-align:center;
+    font-size:28px;
+    font-weight:bold;
+    margin-top:20px;
+}
 
-            <!-- SUBTÍTULO -->
-            <h2 class="subtitulo">
+.whatsapp{
+    text-align:center;
+    font-size:28px;
+    margin-top:40px;
+    color:#00ff90;
+}
 
-                <span class="rojo">Ingeniería</span>
-                <span class="azul"> Humana </span>
-                <span class="negro"> y Tecnológica</span>
+.catalogo{
+    text-align:center;
+    margin-top:40px;
+}
 
-            </h2>
+.boton{
+    background:#25d366;
+    color:white;
+    padding:20px 35px;
+    border-radius:50px;
+    text-decoration:none;
+    font-size:25px;
+    font-weight:bold;
+}
 
-        </div>
+footer{
+    text-align:center;
+    padding:20px;
+    background:black;
+    margin-top:40px;
+}
 
-    </section>
+</style>
 
-    <!-- ===================== CONTENIDO ===================== -->
-    <div class="contenedor">
+</head>
 
-        <!-- SERVICIOS -->
-        <div class="servicio">
+<body>
 
-            <h2>🛒 Servicios que ofrecemos</h2>
+<section class="portada">
 
-            <!-- IMAGEN -->
-            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475"
-            class="imagen-servicio">
+<div class="overlay">
 
-            <!-- LISTA -->
-            <ul>
-                <li>💻 Equipos informáticos</li>
-                <li>📱 Celulares</li>
-                <li>🖨️ Impresoras</li>
-                <li>📹 Cámaras de video seguridad</li>
-            </ul>
+<h1 class="titulo">
 
-        </div>
+<span class="rojo">JA</span>
+<span class="azul">VE</span>
+<span class="negro">RY</span>
 
-        <!-- SERVICIO TÉCNICO -->
-        <div class="servicio">
+</h1>
 
-            <h2>🛠️ Servicio técnico</h2>
+<h2 class="subtitulo">
 
-            <!-- IMAGEN -->
-            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3"
-            class="imagen-servicio">
+<span class="rojo">Ingeniería</span>
+<span class="azul"> Humana </span>
+<span class="negro"> y Tecnológica</span>
 
-            <!-- LISTA -->
-            <ul>
-                <li>💻 PC´s y laptops</li>
-                <li>🖨️ Impresoras a domicilio</li>
-                <li>📲 Smartphones</li>
-            </ul>
+</h2>
 
-        </div>
+</div>
 
-        <!-- VIDEO VIGILANCIA -->
-        <div class="servicio">
+</section>
 
-            <h2>📹 Instalación y mantenimiento de sistema de vídeo vigilancia</h2>
+<div class="contenedor">
 
-            <!-- IMAGEN -->
-            <img src="https://images.unsplash.com/photo-1558002038-1055907df827"
-            class="imagen-servicio">
+<div class="servicio">
 
-        </div>
+<h2>🛒 Servicios que ofrecemos</h2>
 
-        <!-- REPUESTOS -->
-        <div class="servicio">
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475"
+class="imagen-servicio">
 
-            <h2>🔧 Venta de repuestos y accesorios</h2>
+<ul>
+<li>💻 Equipos informáticos</li>
+<li>📱 Celulares</li>
+<li>🖨️ Impresoras</li>
+<li>📹 Cámaras de video seguridad</li>
+</ul>
 
-            <!-- IMAGEN -->
-            <img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7"
-            class="imagen-servicio">
+</div>
 
-            <ul>
-                <li>📱 Repuestos para celulares</li>
-                <li>💻 Accesorios para PC´s</li>
-            </ul>
+<div class="servicio">
 
-        </div>
+<h2>🛠️ Servicio técnico</h2>
 
-        <!-- TERAPIAS -->
-        <div class="destacado">
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3"
+class="imagen-servicio">
 
-            🌟 Terapias personales y grupales 🌟
+<ul>
+<li>💻 PC´s y laptops</li>
+<li>🖨️ Impresoras a domicilio</li>
+<li>📲 Smartphones</li>
+</ul>
 
-        </div>
+</div>
 
-        <br>
+<div class="servicio">
 
-        <!-- PNL -->
-        <div class="destacado">
+<h2>📹 Instalación y mantenimiento de sistema de vídeo vigilancia</h2>
 
-            🧠 Programación Neurolingüística para Adultos y Niños 🧠
+<img src="https://images.unsplash.com/photo-1558002038-1055907df827"
+class="imagen-servicio">
 
-        </div>
+</div>
 
-        <!-- WHATSAPP -->
-        <div class="whatsapp">
+<div class="destacado">
 
-            📞 Información y WhatsApp:<br><br>
+🌟 Terapias personales y grupales 🌟
 
-            <a href="https://wa.me/593958636831"
-            style="color:#00ff90;">
-            +593958636831
-            </a>
+</div>
 
-            -
+<div class="destacado">
 
-            <a href="https://wa.me/593961753470"
-            style="color:#00ff90;">
-            +593961753470
-            </a>
+🧠 Programación Neurolingüística para Adultos y Niños 🧠
 
-        </div>
+</div>
 
-        <!-- CATÁLOGO -->
-        <div class="catalogo">
+<div class="whatsapp">
 
-            <a class="boton"
-            href="CATALOGO 12 MAYO 2026 JAVERY.pdf"
-            target="_blank">
+📞 WhatsApp:
++593958636831 - +593961753470
 
-            📚 Pide nuestros catálogos aquí
+</div>
 
-            </a>
+<div class="catalogo">
 
-        </div>
+<a class="boton"
+href="CATALOGO 12 MAYO 2026 JAVERY.pdf"
+target="_blank">
 
-    </div>
+📚 Pide nuestros catálogos aquí
 
-    <!-- PIE DE PÁGINA -->
-    <footer>
+</a>
 
-        © 2026 JAVERY - Ingeniería Humana y Tecnológica
+</div>
 
-    </footer>
+</div>
 
-</body> <!-- Fin cuerpo -->
+<footer>
 
-</html> <!-- Fin HTML -->
+© 2026 JAVERY
+
+</footer>
+
+</body>
+</html>
