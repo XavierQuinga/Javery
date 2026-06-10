@@ -1,243 +1,149 @@
-
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>JAVERY</title>
+    <!-- Permite reconocer caracteres especiales -->
+    <meta charset="UTF-8">
 
-<style>
+    <!-- Hace que la página se adapte a celulares -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-body{
-    margin:0;
-    padding:0;
-    font-family:Arial;
-    background:linear-gradient(to bottom,#001f3f,#000000);
-    color:white;
-}
+    <!-- Nombre que aparecerá en la pestaña del navegador -->
+    <title>JAVERY | Ingeniería Humana y Tecnología</title>
 
-.portada{
-    width:100%;
-    height:500px;
-    background-image:url('JAVERY V 2.4 modif(1).png');
-    background-size:cover;
-    background-position:center;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-
-.overlay{
-    background:rgba(0,0,0,0.5);
-    padding:30px;
-    border-radius:20px;
-}
-
-.titulo{
-    font-size:80px;
-    font-weight:bold;
-    text-align:center;
-    text-shadow:3px 3px 10px gold;
-}
-
-.rojo{
-    color:red;
-}
-
-.azul{
-    color:#00bfff;
-}
-
-.negro{
-    color:black;
-}
-
-.subtitulo{
-    text-align:center;
-    font-size:40px;
-    font-weight:bold;
-    text-shadow:2px 2px 10px gold;
-}
-
-.contenedor{
-    width:90%;
-    margin:auto;
-    padding:30px;
-}
-
-.servicio{
-    background:#0d1b2a;
-    padding:20px;
-    margin-bottom:30px;
-    border-radius:20px;
-    box-shadow:0px 0px 20px cyan;
-}
-
-.servicio h2{
-    color:#00ffff;
-}
-
-.imagen-servicio{
-    width:100%;
-    max-width:500px;
-    border-radius:20px;
-    display:block;
-    margin:auto;
-}
-
-ul{
-    font-size:24px;
-    line-height:2;
-}
-
-.destacado{
-    background:linear-gradient(to right,#ff0080,#7928ca);
-    padding:20px;
-    border-radius:20px;
-    text-align:center;
-    font-size:28px;
-    font-weight:bold;
-    margin-top:20px;
-}
-
-.whatsapp{
-    text-align:center;
-    font-size:28px;
-    margin-top:40px;
-    color:#00ff90;
-}
-
-.catalogo{
-    text-align:center;
-    margin-top:40px;
-}
-
-.boton{
-    background:#25d366;
-    color:white;
-    padding:20px 35px;
-    border-radius:50px;
-    text-decoration:none;
-    font-size:25px;
-    font-weight:bold;
-}
-
-footer{
-    text-align:center;
-    padding:20px;
-    background:black;
-    margin-top:40px;
-}
-
-</style>
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-<section class="portada">
+    <!-- Contenedor principal -->
 
-<div class="overlay">
+    <section class="portada">
 
-<h1 class="titulo">
+        <!-- Imagen izquierda -->
 
-<span class="rojo">JA</span>
-<span class="azul">VE</span>
-<span class="negro">RY</span>
+        <img src="images/servicio_tecnico.jpg"
+             class="izquierda"
+             alt="Servicio Técnico">
 
-</h1>
+        <!-- Logo -->
 
-<h2 class="subtitulo">
+        <img src="images/LOGO NUEVO JAVERY-2026.jpeg"
+             class="logo"
+             alt="Logo JAVERY">
 
-<span class="rojo">Ingeniería</span>
-<span class="azul"> Humana </span>
-<span class="negro"> y Tecnológica</span>
+        <!-- Imagen derecha -->
 
-</h2>
+        <img src="images/venta_tecnologica.png"
+             class="derecha"
+             alt="Venta Tecnológica">
 
-</div>
+        <!-- Imagen inferior izquierda -->
 
-</section>
+        <img src="images/camara_seguridad.jpg"
+             class="inferior-izquierda"
+             alt="Cámaras">
 
-<div class="contenedor">
+        <!-- Imagen inferior derecha -->
 
-<div class="servicio">
+        <img src="images/terapia_pnl.jpg"
+             class="inferior-derecha"
+             alt="PNL">
 
-<h2>🛒 Servicios que ofrecemos</h2>
+    </section>
 
-<img src="https://images.unsplash.com/photo-1518770660439-4636190af475"
-class="imagen-servicio">
+    <section class="servicios">
 
-<ul>
-<li>💻 Equipos informáticos</li>
-<li>📱 Celulares</li>
-<li>🖨️ Impresoras</li>
-<li>📹 Cámaras de video seguridad</li>
-</ul>
+        <h1>Servicios que ofrecemos</h1>
 
-</div>
+        <h2>Venta de:</h2>
 
-<div class="servicio">
+        <ul>
 
-<h2>🛠️ Servicio técnico</h2>
+            <li>🖥️ Equipos informáticos</li>
 
-<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3"
-class="imagen-servicio">
+            <li>💻 Laptops</li>
 
-<ul>
-<li>💻 PC´s y laptops</li>
-<li>🖨️ Impresoras a domicilio</li>
-<li>📲 Smartphones</li>
-</ul>
+            <li>📱 Celulares</li>
 
-</div>
+            <li>🖨️ Impresoras</li>
 
-<div class="servicio">
+            <li>📹 Cámaras de videovigilancia</li>
 
-<h2>📹 Instalación y mantenimiento de sistema de vídeo vigilancia</h2>
+        </ul>
 
-<img src="https://images.unsplash.com/photo-1558002038-1055907df827"
-class="imagen-servicio">
+        <h2>Servicio técnico en:</h2>
 
-</div>
+        <ul>
 
-<div class="destacado">
+            <li>💻 PC's y laptops</li>
 
-🌟 Terapias personales y grupales 🌟
+            <li>🖨️ Impresoras (a domicilio)</li>
 
-</div>
+            <li>📲 Smartphones</li>
 
-<div class="destacado">
+        </ul>
 
-🧠 Programación Neurolingüística para Adultos y Niños 🧠
+        <h2>Instalación y mantenimiento de sistemas de videovigilancia 📹🔭</h2>
 
-</div>
+        <h2>Venta de repuestos y accesorios para celulares y PC's</h2>
 
-<div class="whatsapp">
+        <h2 class="destacado">
 
-📞 WhatsApp:
-+593958636831 - +593961753470
+            Terapias personales y grupales
 
-</div>
+        </h2>
 
-<div class="catalogo">
+        <h2 class="destacado">
 
-<a class="boton"
-href="CATALOGO 12 MAYO 2026 JAVERY.pdf"
-target="_blank">
+            Programación Neurolingüística para Adultos y Niños
 
-📚 Pide nuestros catálogos aquí
+        </h2>
 
-</a>
+    </section>
 
-</div>
+    <section class="contacto">
 
-</div>
+        <h1>
 
-<footer>
+            Para información llámanos o escríbenos por WhatsApp
 
+        </h1>
+
+        <a href="https://wa.me/593958636831"
+           class="boton">
+
+            WhatsApp 1
+
+        </a>
+
+        <a href="https://wa.me/593961753470"
+           class="boton">
+
+            WhatsApp 2
+
+        </a>
+
+    </section>
+
+    <section class="catalogo">
+
+        <a href="catalogos/catalogo.pdf"
+           class="catalogo-btn"
+           target="_blank">
+
+            📚 Pide nuestro catálogo aquí
+
+        </a>
+
+    </section>
+
+</body>
+
+</html>
 © 2026 JAVERY
 
 </footer>
